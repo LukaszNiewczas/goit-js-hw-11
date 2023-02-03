@@ -2,15 +2,25 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homework 10</title>
+    <title>Homework 11</title>
   </head>
   <body>
-    <input type="text" id="search-box" />
-    <ul class="country-list"></ul>
-    <div class="country-info"></div>
-
-    <script src="index.js" type="module"></script>
+    <form class="search-form" id="search-form">
+      <input
+        class="search-form__input"
+        type="text"
+        name="searchQuery"
+        autocomplete="off"
+        placeholder="Search images..."
+      />
+      <button class="search-form__btn" type="submit">Szukaj</button>
+    </form>
+    <div class="gallery"></div>
+    <button type="button" class="load-more">Load more</button>
+    <p class="end-collection">
+      We're sorry, but you've reached the end of search results.
+    </p>
+    <script type="module" src="./index.js"></script>
   </body>
 </html>
