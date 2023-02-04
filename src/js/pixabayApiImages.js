@@ -8,7 +8,7 @@ export default class PixabayApiImages {
   }
   async fetchImages() {
     console.log(this);
-    const url = `${BASE_URL}?key=${API_KEY}&q=${this.searchQuery}&image_type=photo&orientation=horizontal&safesearch=true&per_page=40&page=${this.page}`;
+    const url = `${BASE_URL}?key=${API_KEY}&q=${this.searchQuery}&image_type=photo&orientation=horizontal&safesearch=true&per_page=20&page=${this.page}`;
     const response = await fetch(url);
     const data = await response.json();
     this.incrementPage();
